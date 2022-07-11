@@ -43,33 +43,51 @@ if (ejercicio == 0) {
         console.log(`el valor de "i" es: ${i}`);
     }
     */
-    if (ejercicio == 5) {
+/*  if (ejercicio == 5) {
     for(var i = 0; i < 10; i++){
         console.log(`el valor de "i" es: ${i}`);
     }
     
+*/
 
-}
 
 // Ejercicios de práctica numérica con bucle for
-if (ejercicio == 2) {
+
     // Realice un bucle que cuente de 0 al 9
     // En cada iteración del bucle imprimir en consola el número
     // o índice que irá incrementando
     // Utilice bucle "for"
+/*    if (ejercicio == 2) {
 }
 
+for (let i=0; i<10;i++){
+    console.log (`el valor de "i" es: ${i}`);
+}
+*/
+
 // Ejercicios de práctica numérica con bucle for of
-if (ejercicio == 3) {
-    const numeros = [0, 1, 2, 3, 4, 5]
+
     // Realice un bucle que recorra el array de numeros
     // y en cada iteración imprira en la consola el valor
     // del número recorrido
     // Utilice bucle "for of"
-}
+
+/*  if (ejercicio == 3) {
+    const numeros = [0, 1, 2, 3, 4, 5]
+
+    for(const numero of numeros){
+	console.log(numero)
+   }
+};
+*/
 
 // Ejercicios de práctica de objetos con bucle for of
-if (ejercicio == 4) {
+// Realice un bucle que recorra el array de objetos
+    // personas.
+    // En cada iteración imprimir el nombre de la persona.
+    // Utilice bucle "for of"
+
+/* if (ejercicio == 4) {
     const personas = [
         {
             "nombre": "Max",
@@ -84,16 +102,16 @@ if (ejercicio == 4) {
             "apellido": "MacGonagall"
         }
     ];
-    // Realice un bucle que recorra el array de objetos
-    // personas.
-    // En cada iteración imprimir el nombre de la persona.
-    // Utilice bucle "for of"
-
+for(const persona of personas){
+    console.log(persona.nombre)
 }
+}
+*/    
+
+
 
 // Ejercicios de práctica de objetos con bucle for of
-if (ejercicio == 5) {
-    const personas = [];
+
     // Esta vez el array de personas comenzará vacio.
     // Realice un bucle que en cada iteración solicite
     // al usuario con prompt un nombre y apellido.
@@ -102,4 +120,25 @@ if (ejercicio == 5) {
     // El bucle deberá ejecutarse por 2 iteraciones.
     // Al terminarse el bucle (luego de ejecutarse todas las iteraciones)
     // deberá imprimir en consola el contenido del array "personas"
-}
+
+    if (ejercicio == 5) {
+     const personas = [];
+
+    let i=0;
+    while (i<2){
+      i++;  
+    
+    personas.push (
+
+    {               "nombre": prompt("Ingrese Nombre"),
+                    "apellido": prompt ("Ingrese Apellido"),
+    } )  
+            console.log(personas);
+        }
+    }    
+
+    
+        
+
+        
+       
