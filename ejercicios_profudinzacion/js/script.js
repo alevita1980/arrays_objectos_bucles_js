@@ -17,8 +17,8 @@ const data = [
         thumbnail: "https://raw.githubusercontent.com/InoveAlumnos/pokemon_assets_js/main/assets/003.png",
     }
 ]
-
-/* Enunciado
+/*
+ Enunciado
 1) Utilice el array data para completar la página de pokemones,
 como ejemplo se puede guiar por el siguiente "article", deberá
 utilizar un bucle para recorrer data y armar el HTML que introducirá
@@ -38,7 +38,38 @@ en "section".
 2) Luego de que haya podido generar el contenido dinamicamente, agregar
     a todas las tarjetas de pokemons la propiedades "planta"
     al pasar el mouse por encima (mouseover).
-
-*/
-
+/*
 /* Comienza a escribir su código aquí */
+
+let accumulator=""
+for(const tarjeta of data){
+  accumulator +=
+  `<article>
+        <img
+          src=${tarjeta.thumbnail}
+          class="icon-type"
+          alt="icon type"
+        />
+        <p>
+        ${tarjeta.name}
+        </p>
+        </article>
+`
+ };
+const section = document.querySelector("section");
+section.innerHTML=accumulator;
+
+const articulo = document.querySelectorAll("article");
+
+for (const article of articulo){
+ 
+article.addEventListener("mouseover", function () {
+    article.classList.add("planta");
+  });
+
+  article.addEventListener("mouseout", function () {
+    article.classList.remove("planta");
+  });
+
+};
+
